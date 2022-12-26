@@ -105,7 +105,25 @@ EN resumen lo que entendi fue: El cliente hace una peticion para resolver un nom
 ***"TDL"*** dependiendo si es .com .net o www entre muchos otros. Finalmente ***"Authoritative Name Server"*** tiene toda la informacion del dominio la ip y lo demas registros.
 
 
+## DNS Zones
 
+### Primary DNS Server
+
+Es el servidor que tiene la informacion de los zone files lo que entiendo es que este es donde se modifica el archivo zone y se replica a los servidores secundarios esto con el objetivo de tener un backup. si no esta este disponible pues e consulta al secundario.
+
+### Secondary DNS Server
+
+> Los servidores DNS secundarios contienen copias de solo lectura del archivo de zona del servidor DNS principal. Estos servidores comparan sus datos con el servidor DNS principal a intervalos regulares y, por lo tanto, sirven como servidor de respaldo. Es útil porque la falla de un servidor de nombres principal significa que las conexiones sin resolución de nombres ya no son posibles. De todos modos, para establecer conexiones, el usuario tendría que conocer las direcciones IP de los servidores contactados. Sin embargo, esta no es la regla.
+
+### Zone Transfer
+
+Se le llama trasferencia de zona cuando se copia informacion del DNS primary a uno secundario ( puede haber muchos de estos )
+y existen 2 metodos que en general se diferencian de si se copia toda la informacion(AXFR - Asynchronous Full Transfer Zone) o bien si solo se copia las entradas que han sido agregadas o modfiicadas (IXFR - Incremental Zone Transfer).
+
+
+### Ataque Zone Trasfer
+
+> The problem with DNS servers and zone transfers is that it does not require authentication and can be requested by any client. If the administrator has not set "Trusted Hosts/IP addresses" for the DNS servers, which have permission to receive these zones, we can also query the entire zone file with its contents. This will give us all IP addresses with the respective hosts and significantly increase our attack vector if the agreement does not limit our scope. Even today, it is quite common that the DNS servers are misconfigured and allow this.
 
 
 
