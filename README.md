@@ -42,11 +42,19 @@ Los servidores de nombres contienen las denominadas zonas o archivos de zona. En
 
 ### Zones
 
+Aqui lo explica muy bien en el link pero la zonas como para separar.  Las zonas DNS no están necesariamente separadas físicamente entre sí, se usan estrictamente para delegar el control. con esta cita seguro te vuelve la idea 
+
+
+
+https://www.cloudflare.com/es-es/learning/dns/glossary/dns-zone/
+
 ### Domain names
 
+Los nombres del dominio 
 
 ### IP addresses
 
+Las direcciones ips ve el archivo /etc/host  ( asi me imagino que estan dentro de los archivos de zona al parecer asi es)
 
 ## The DNS servers ( entiendo que son con los que te conectas cuando resuelves un nombre)
 
