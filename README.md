@@ -101,7 +101,8 @@ Este es el ultimo paso el TDL Redirecciona aqui y tiene la ip otra informacion c
 > Authoritative name servers store DNS record information for domains. These servers are responsible for providing answers to requests from name servers with the IP address and other DNS entries for a web page so the web page can be addressed and accessed by the client. When a recursive resolver receives a TLD name server response, the response refers it to an authoritative name server. The authoritative name server is the last step to get an IP address.
 
 
-EN resumen
+EN resumen lo que entendi fue: El cliente hace una peticion para resolver un nombre este va al ***"Recursive resolvers"*** estos primero checan su cache en busca de peticiones similares si no hay el segundo paso es enviar una peticion al uno de los ***"root server"*** atiende la peticion dirigiendo al recursive resolver al
+***"TDL"*** dependiendo si es .com .net o www entre muchos otros. Finalmente ***"Authoritative Name Server"*** tiene toda la informacion del dominio la ip y lo demas registros.
 
 
 
