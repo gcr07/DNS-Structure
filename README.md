@@ -3,7 +3,7 @@
 
 Ya sabes convierte los nombres en direcciones IPs para  que sean alcanzables 
 
-## Estructura 
+## Estructura ( pero mas bien es la respresentacion grafica de como se guardan los nombres de dominios en internet y de aqui se deriva como se buscaria un dominio)
 
 Se dice que es como un arbol proponen dos ejemplos primero proponen el fully qualified domain name (FQDN):
 
