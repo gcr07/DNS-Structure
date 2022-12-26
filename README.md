@@ -72,19 +72,28 @@ Tienen estos 13 servidores una letra asignada de la `"a" a la "m". Se encuntran 
 dig ns root-servers.net | grep NS | sort -u
 ```
 
+Estos 13 servidores de nombres raíz representan los 13 tipos diferentes de servidores de nombres raíz. No significa que solo se distribuya en 13 hosts, sino en más de 600 copias de estos servidores de nombres raíz en todo el mundo.
 
+Por lo que puedo entender cuanod se hace una query es la primera parada este servidor acepta la peticion que viene del recursive reolver y redirecciona y responde a la peticion al correspondiente TLD server.
 
+> Each of these root name servers accepts a recursive resolver query that contains a domain name. The domains' extension answers the query and forwards the recursive resolver to the corresponding TLD name server. 
 
 
 
 ### TLD name server
 
+"A TLD name server manages the information on all domain names that have the same TLD" ( por ejemplo .com) Eso quiere decir que "This means that all domains under the TLD ".com" are managed by the corresponding TLD name server" 
+
+EL flujo de datos seria el siguiente: "When we look for a domain registered under this TLD, the recursive resolver, after receiving a response from a root name server, sends a query to a TLD name server responsible for that TLD."
+
 ### Authoritative name servers
 
+Este es el ultimo paso el TDL Redirecciona aqui y tiene la ip otra informacion como las DNS entries:
+
+> Authoritative name servers store DNS record information for domains. These servers are responsible for providing answers to requests from name servers with the IP address and other DNS entries for a web page so the web page can be addressed and accessed by the client. When a recursive resolver receives a TLD name server response, the response refers it to an authoritative name server. The authoritative name server is the last step to get an IP address.
 
 
-
-
+EN resumen
 
 
 
