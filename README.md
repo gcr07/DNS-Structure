@@ -50,9 +50,36 @@ Los servidores de nombres contienen las denominadas zonas o archivos de zona. En
 
 ## The DNS servers ( entiendo que son con los que te conectas cuando resuelves un nombre)
 
-Are divided into four different types:
+> Are divided into four different types: 
+
+Para resolver un nombre se ultilizan varios Name servers no solo uno.  el proceso es el siguiente segun entiendo 
 
 
+
+### Recursive resolvers (DNS Recursor)
+
+Es como un intermediario que se encarga de guardar en la cache las peticiones pero es un intermediario entre el cliente y el name server. algo asi como cloadflare o una CDN. ( solo es un ejemplo mio )
+
+### Root name server
+
+Se puede acceder a trece servidores de nombres raíz con direcciones IPv4 e IPv6. Estos contienen los archivos de zona de  todos los nombres de dominio y direcciones IP de los TLD. 
+
+>  Every recursive resolver knows these 13 root name servers.
+
+Tienen estos 13 servidores una letra asignada de la `"a" a la "m". Se encuntran en el dominio "root-servers.net"
+
+```
+dig ns root-servers.net | grep NS | sort -u
+```
+
+
+
+
+
+
+### TLD name server
+
+### Authoritative name servers
 
 
 
