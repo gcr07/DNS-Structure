@@ -126,6 +126,60 @@ y existen 2 metodos que en general se diferencian de si se copia toda la informa
 > The problem with DNS servers and zone transfers is that it does not require authentication and can be requested by any client. If the administrator has not set "Trusted Hosts/IP addresses" for the DNS servers, which have permission to receive these zones, we can also query the entire zone file with its contents. This will give us all IP addresses with the respective hosts and significantly increase our attack vector if the agreement does not limit our scope. Even today, it is quite common that the DNS servers are misconfigured and allow this.
 
 
+### DNS Reconocimiento
+
+Ya habiendo estudiado como funciona el protocolo DNS podemos recopilar informacion que informacion es util:
+
+1. DNS Records (MX, TXT, A)
+
+2. Subdomains/Hosts
+
+3. DNS Security
+
+
+## OSINT
+
+Para sacar datos se usan herramientas de fuentes publicas algunas son:
+
+```
+ Google Dorks
+ VirusTotal
+ DNSdumpster
+ Netcraft
+ 
+```
+
+## Certificate Transparency
+
+Es una herramienta donde al parecer se registran certificados que usan las paginas para el protocolo TLS y es informacion publica que puede ser usada para ver que paginas tiene cierta organizacion.
+
+> Certificate Transparency (CT) logs contain all certificates issued by a participating Certificate Authority (CA) for a specific domain. Therefore, SSL/TLS certificates from web servers include domain names, subdomain names, and email addresses. Since these logs are public and accessible to everyone, it is a valuable source for understanding the target company's infrastructure better. We can use a tool that outputs all the CT logs for our target domain from different sources and filtered is ctfr.py.
+
+> Los registros de transparencia de certificados (CT) contienen todos los certificados emitidos por una autoridad de certificación (CA) participante para un dominio específico. Por lo tanto, los certificados SSL/TLS de los servidores web incluyen nombres de dominio, nombres de subdominio y direcciones de correo electrónico.
+
+### CTFR.py
+
+```
+
+python3 ctfr.py -d inlanefreight.com
+
+```
+
+
+## Zone Transfer
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
