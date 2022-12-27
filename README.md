@@ -176,6 +176,7 @@ Cuantos name servers
 
 ```
 dig axfr  @10.129.105.63 inlanefreight.htb
+Command : dig axfr cronos.htb @10.10.10.13 # la ip de la maquina tenia el puerto 53 abierto y ese es el dominio que tambien estaba o era la maquina Cronos ya entendi con esto como se usa.
 ```
 
 
