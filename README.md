@@ -168,7 +168,23 @@ python3 ctfr.py -d inlanefreight.com
 
 ## Zone Transfer
 
+Ya sabes trasferir las zonas de un servidor a otro ;) 
 
+### Assesment
+
+Cuantos name servers 
+
+```
+dig axfr  @10.129.105.63 inlanefreight.htb
+```
+
+
+## Python PIP8
+
+
+Es una guia para codificar codigo de calidad 
+
+> Hay pautas desarrolladas especialmente para Python, conocidas como Python Enhancement Proposal( PEP8). PEP8 es un documento que contiene guidelinesy best practicespara escribir código Python y fue escrito en 2001 por Guido van Rossum, Barry Varsovia y Nick Coghlan. PEP8El enfoque principal de es mejorar el readabilityy consistencydel código de Python. Cuando tengamos más experiencia escribiendo código Python, podremos empezar a trabajar con otros. Escribir código legible es crucial porque otras personas que no están familiarizadas con nosotros coding stylenecesitan leer y comprender nuestro código. Si tenemos pautas que seguimos y reconocemos, otros también encontrarán nuestro código más fácil de leer.
 
 
 
